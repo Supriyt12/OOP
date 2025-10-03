@@ -1,4 +1,5 @@
 package id.ac.polbeng.supriyanto.test_kelas
+
 class Employee(_id: Int, _name: String, _age: Int) {
     val id: Int = _id
         get() = field
