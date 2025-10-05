@@ -1,5 +1,4 @@
 package id.ac.polbeng.supriyanto.test_kelas
-
 open class Teacher {
     // Must use "open" modifier to allow child classes to override it
     open fun teach() {

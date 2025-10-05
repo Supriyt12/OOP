@@ -1,5 +1,4 @@
 package id.ac.polbeng.supriyanto.test_kelas
-
 // Child class (initializes the parent class)
 class LaptopB : Computer{
     val batteryLife: Double

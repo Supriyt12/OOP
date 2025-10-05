@@ -1,4 +1,4 @@
-package id.ac.polbeng.depandi.test_kelas
+package id.ac.polbeng.supriyanto.test_kelas
 
 open class Mahasiswa(var nama: String, var nrp: Int) {
     open fun info() {
