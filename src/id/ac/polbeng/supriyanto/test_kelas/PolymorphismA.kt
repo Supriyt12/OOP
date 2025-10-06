@@ -1,27 +1,20 @@
 package id.ac.polbeng.supriyanto.test_kelas
 
-fun printNumber(n : Number){
-    println("Using printNumber(n : Number)")
-    println(n.toString() + "\n")
+open class MyBase {
+    // Must use "open" modifier to allow child classes to override it
+    open fun think () {
+        println("Hey!! i am thinking ")
+    }
 }
-fun printNumber(n : Int){
-    println("Using printNumber(n : Int)")
-    println(n.toString() + "\n")
+class MyDerived: MyBase() { // inheritance happens using default constructor
+    // Must use "override" modifier to override a base class function
+    override fun think() {
+        println("I Am from Child")
+    }
 }
-fun printNumber(n : Double){
-    println("Using printNumber(n : Double)")
-    println(n.toString() + "\n")
-}
-fun printNumber(n:Int, str:String){
-    println("Using printNumber(n:Int, str:String)")
-    println(str + n.toString() + "\n")
-}
-fun main(){
-    val a: Number = 99
-    val b = 1
-    val c = 3.1
-    printNumber(a)
-    printNumber(b)
-    printNumber(c)
-    printNumber(b, "Overloading function ")
+fun main() {
+    val myBase = MyBase()
+    myBase.think()
+    var myDerived = MyDerived()
+    myDerived.think()
 }
